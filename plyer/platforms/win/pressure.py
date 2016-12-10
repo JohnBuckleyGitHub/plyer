@@ -60,7 +60,7 @@ class WinPressure(Pressure):
             self.listener.disable()
             del self.listener
 
-    def _get_acceleration(self):
+    def _get_pressure(self):
         if (self.bState):
             return tuple(self.listener.values)
         else:

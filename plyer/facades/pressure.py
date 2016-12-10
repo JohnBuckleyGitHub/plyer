@@ -15,7 +15,6 @@ class Pressure(object):
     def enable(self):
         '''Activate the Pressure sensor.
         '''
-        print(' proper enable  ')
         self._enable()
 
     def disable(self):
