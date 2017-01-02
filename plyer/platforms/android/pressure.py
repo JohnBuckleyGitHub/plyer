@@ -62,7 +62,7 @@ class AndroidPressure(Pressure):
             try:
                 return tuple(self.listener.values)
             except TypeError:
-                return tuple(self.listener.values,)
+                return (None, None, None)
         else:
             return (None, None, None)
 
