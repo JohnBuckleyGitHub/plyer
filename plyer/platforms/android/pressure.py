@@ -59,7 +59,10 @@ class AndroidPressure(Pressure):
 
     def _get_pressure(self):
         if (self.bState):
-            return tuple(self.listener.values)
+            try:
+                return tuple(self.listener.values)
+            except TypeError:
+                return tuple(self.listener.values,)
         else:
             return (None, None, None)
 
