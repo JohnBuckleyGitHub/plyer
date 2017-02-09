@@ -45,7 +45,6 @@ class AndroidPressure(Pressure):
         self.bState = False
 
     def _enable(self):
-        print('_enabling pressure sensor')
         if (not self.bState):
             self.listener = PressureSensorListener()
             self.listener.enable()
